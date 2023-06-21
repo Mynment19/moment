@@ -1,12 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="EUC-KR">
-<title>Home</title>
-<style type="text/css">
-		html, body{
+	html, body{
 		width: 100%;
 		height: 100%;
 		background-color: black;
@@ -18,7 +10,7 @@
 		margin: 0;
 		padding: 0;
 	}
-	/* 고정 메뉴 */
+	/* 怨좎젙 硫붾돱 */
 	.sidebar{
 		width: 20%;
 		height: 100%;
@@ -80,11 +72,3 @@
 		font-size: 20px;
 		font-style: normal;
 	}
-</style>
-</head>
-<body>
-	<div class="sidebar">
-		<a href="/" class="logo">Moment</a>	
-	</div>
-	<div class="main">
-		<section>
