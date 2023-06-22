@@ -65,7 +65,7 @@
 	}
 	.post{
 		background-color: white;
-		height: auto;	
+		min-height: 50%;	
 	}
 	footer{
 		height: 5%;

@@ -36,7 +36,7 @@
 </head>
 <body>
 	<section>
-		<h1>Welcome!</h1>
+		<h1>Join</h1>
 		<form action="" method="post">
 			<div class="login">
 				<label for="id"></label>
@@ -46,12 +46,16 @@
 				<label for="password"></label>
 				<input type="password" name="password" id="password" placeholder="PW"/>
 			</div>
-			<div class="login">
-				<button type="submit">로그인</button>
+			<div>
+				<label for="password"></label>
+				<input type="password" name="password" id="checkpassword" placeholder="CHPW"/>
+			</div>
+			<div>
+				<label for="email"></label>
+				<input type="email" name="email" id="email" placeholder="PW"/>
 			</div>
 			<div class="login">
-				<a href="/login/join" class="join">회원가입</a>
-				<a href="">아이디/비밀번호 찾기</a>
+				<button type="submit">회원가입</button>
 			</div>
 	</form>
 	</section>
