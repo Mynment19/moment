@@ -10,10 +10,11 @@ import lombok.ToString;
 @ToString
 @NoArgsConstructor
 @Getter @Setter
-public class MemberDTO {
+public class JoinDTO {
 	private String userid;
 	private String password;
 	private String name;
 	private String gender;
 	private String email;
 }
+

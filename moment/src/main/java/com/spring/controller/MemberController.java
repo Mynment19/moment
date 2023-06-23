@@ -13,7 +13,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import com.spring.domain.AuthDTO;
 import com.spring.domain.ChangeDTO;
 import com.spring.domain.LoginDTO;
-import com.spring.domain.MemberDTO;
+import com.spring.domain.JoinDTO;
 import com.spring.service.MemberService;
 
 import lombok.extern.slf4j.Slf4j;
@@ -83,7 +83,7 @@ public class MemberController {
 	}
 	
 	@PostMapping("/register")
-	public String registerPost(MemberDTO dto) {
+	public String registerPost(JoinDTO dto) {
 		log.info("회원가입 요청 "+ dto);
 		
 		//회원가입 성공 시 로그인 페이지 이동
