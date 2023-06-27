@@ -3,13 +3,13 @@ package com.spring.service;
 import com.spring.domain.AuthDTO;
 import com.spring.domain.ChangeDTO;
 import com.spring.domain.LoginDTO;
-import com.spring.domain.JoinDTO;
+import com.spring.domain.LoginMemberDTO;
 
 public interface MemberService {
 	//로그인
 	public AuthDTO login(LoginDTO loginDTO);
 	//회원가입
-	public boolean register(JoinDTO memberDTO);
+	public boolean register(LoginMemberDTO memberDTO);
 	//중복 아이디 체크
 	public boolean dupId(String userid);
 	//회원탈퇴

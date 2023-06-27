@@ -8,6 +8,55 @@
 <title>Insert title here</title>
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 <style>
+	html,body{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		margin:0;
+		background-color: black;
+	}
+	.sidebar{
+		width: 15%;
+		overflow: auto;
+	}
+	
+	.container-fluid{
+		width: 85%;
+		margin: 0;
+		padding: 0;
+	}
+	
+	main{
+		padding-left: 20%;
+		padding-right: 20%;
+		padding-bottom: 5%;
+		padding-top: 5%;
+		height: 90%;
+		overflow: auto;
+		margin: 0;
+	}
+	
+	.profile{
+		background-color: white;
+		display: flex;
+	}
+	
+	.profile img{
+		width: 120px;
+		height: 120px;
+		margin: 1%;
+	}
+	
+	.profile-name{
+		padding: 2%;
+	}
+	
+	footer{
+		height: 10%;
+		margin: 0;
+		padding: 0;
+	}
+	
       .bd-placeholder-img {
         font-size: 1.125rem;
         text-anchor: middle;
@@ -84,49 +133,18 @@
 <link rel="stylesheet" href='<c:url value="/css/sign-in.css" />' />
 </head>
 <body>
+<div class="sidebar">
+	<h1>Follow</h1>
+	<table class="table table-striped table-bordered table-hover">
+	<tbody>
+		<c:forEach var="dto" items="${list}">
+			<tr>
+				<td>${dto.writer}</td>
+			</tr>
+		</c:forEach>
+	</tbody>
+</table>
+</div>
+
 <div class="container-fluid">
-<nav class="navbar navbar-expand-lg bg-success" data-bs-theme="dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="index.jsp">회원관리</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/">Home</a>
-        </li>
-        
-        
-        <c:if test="${authDTO == null}">               
-	        <li class="nav-item">         
-	          	<a class="nav-link" href='<c:url value="/member/login"  />'>로그인</a>
-	        </li>
-	        <li class="nav-item">        
-	          <a class="nav-link" href='<c:url value="/member/step1"  />'>회원가입</a>
-	        </li>
-        </c:if>
-        
-        <c:if test="${authDTO != null}">
-	        <li class="nav-item"> 
-	          	<a class="nav-link" href='<c:url value="/member/logout"  />'>로그아웃</a>
-	        </li> 
-	        <li class="nav-item"> 
-	          	<a class="nav-link" href='<c:url value="/member/changePwd"  />'>비밀번호변경</a>
-	        </li>
-	        <li class="nav-item"> 
-	          	<a class="nav-link" href='<c:url value="/member/leave"  />'>회원탈퇴</a>
-	        </li> 
-	        <li class="nav-item">
-	          <a class="nav-link" href="">회원조회</a>
-	        </li>
-        </c:if>
-          
-        <li class="nav-item">
-          <a class="nav-link">Disabled</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
 <main>

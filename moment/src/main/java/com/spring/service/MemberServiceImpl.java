@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 import com.spring.domain.AuthDTO;
 import com.spring.domain.ChangeDTO;
 import com.spring.domain.LoginDTO;
-import com.spring.domain.JoinDTO;
+import com.spring.domain.LoginMemberDTO;
 import com.spring.mapper.MemberMapper;
 
 @Service
@@ -38,7 +38,7 @@ public class MemberServiceImpl implements MemberService {
 	}
 	
 	@Override
-	public boolean register(JoinDTO memberDTO) {
+	public boolean register(LoginMemberDTO memberDTO) {
 		// 비밀번호 암호화 : encode(암호화할 원본 코드)
 		//                   matches(암호화하기 전, 암호화 코드)
 		//                   1234, 암호화된 코드
