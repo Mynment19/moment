@@ -46,6 +46,7 @@
 		<button class="btn btn-xs btn-success" type="button" onclick="location.href='/board/register'">Register New Board</button>
 	</div>
 </div>
+
 <table class="table table-striped table-bordered table-hover">
 	<thead>
 		<tr>
