@@ -60,8 +60,8 @@
 	// CSRF 토큰 값 생성
 	const csrfToken = '${_csrf.token}';
 </script>
-<script src="/resources/js/register.js"></script>
-<script src="/resources/js/upload.js"></script>
+<script src="/js/boardregister.js"></script>
+<script src="/js/upload.js"></script>
 <%@ include file="../include/footer.jsp" %>
 
 

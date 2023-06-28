@@ -5,10 +5,8 @@ INDEX VERSION 1.4+C:\source\moment\.metadata\.plugins\org.eclipse.wst.jsdt.core\
 2517629035.index
 3582702204.index
 4109747799.index
-4109747799.index
 3490199816.index
 2648142800.index
-4269384944.index
 3537284196.index
 2347436508.index
 964687791.index

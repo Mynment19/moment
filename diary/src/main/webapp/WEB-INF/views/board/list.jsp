@@ -46,6 +46,7 @@
 		<button class="btn btn-xs btn-success" type="button" onclick="location.href='/board/register'">Register New Board</button>
 	</div>
 </div>
+
 <table class="table table-striped table-bordered table-hover">
 	<thead>
 		<tr>
@@ -119,7 +120,7 @@
 	// result = 'success'; 수정,삭제
 	// result = '35';  등록
 </script>
-<script src="/resources/js/list.js"></script>
+<script src="/js/list.js"></script>
 <%@ include file="../include/footer.jsp"%>
 
 

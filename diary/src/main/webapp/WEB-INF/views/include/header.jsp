@@ -114,10 +114,10 @@
 	          	<a class="nav-link" href='<c:url value="/member/leave"  />'>회원탈퇴</a>
 	        </li> 
 	        <li class="nav-item"> 
-	          	<a class="nav-link" href='<c:url value="/board/home"  />'>홈</a>
+	          	<a class="nav-link" href='<c:url value="/board/list"  />'>홈</a>
 	        </li> 
 	        <li class="nav-item"> 
-	          	<a class="nav-link" href='<c:url value="/board/posting"  />'>글쓰기</a>
+	          	<a class="nav-link" href='<c:url value="/board/register"  />'>글쓰기</a>
 	        </li> 
 	        <li class="nav-item"> 
 	          	<a class="nav-link" href='<c:url value="/board/modify"  />'>글수정</a>

@@ -2,11 +2,12 @@ package com.spring.mapper;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import com.spring.domain.Criteria;
 import com.spring.domain.ReplyDTO;
-
+@Mapper
 public interface ReplyMapper {
 	public ReplyDTO read(int rno);
 	public int insert(ReplyDTO dto);

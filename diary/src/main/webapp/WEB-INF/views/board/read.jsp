@@ -135,8 +135,8 @@
 	// CSRF 토큰 값 생성
 	const csrfToken = '${_csrf.token}';
 </script>
-<script src="/resources/js/reply.js"></script>
-<script src="/resources/js/read.js"></script>
+<script src="/js/reply.js"></script>
+<script src="/js/read.js"></script>
 <%@ include file="../include/footer.jsp"%>
 
 

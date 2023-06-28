@@ -2,11 +2,12 @@ package com.spring.mapper;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import com.spring.domain.BoardDTO;
 import com.spring.domain.Criteria;
-
+@Mapper 
 public interface BoardMapper {
 	public List<BoardDTO> list(Criteria cri);
 	public int insert(BoardDTO dto);
