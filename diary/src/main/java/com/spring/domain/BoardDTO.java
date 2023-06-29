@@ -19,10 +19,6 @@ public class BoardDTO {
 	private String content;
 	private String writer;
 	private Date regDate;
-	private Date updateDate;
-	private int replyCnt;
-	//첨부파일 정보
-	private List<AttachFileDTO> attachList;
 }
 
 

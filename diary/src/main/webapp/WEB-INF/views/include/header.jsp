@@ -120,7 +120,7 @@
 	          	<a class="nav-link" href='<c:url value="/board/register"  />'>글쓰기</a>
 	        </li> 
 	        <li class="nav-item"> 
-	          	<a class="nav-link" href='<c:url value="/board/modify"  />'>글수정</a>
+	          	<a class="nav-link" href='<c:url value="/board/search"  />'>검색</a>
 	        </li> 
         </c:if>
       </ul>

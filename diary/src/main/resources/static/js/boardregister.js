@@ -34,10 +34,30 @@ form.addEventListener("submit", (e) => {
       // <input type='hidden' name='attachList[0].fileName' value='cat.jpg'/>
       // <input type='hidden' name='attachList[0].fileType' value='true'/>
 
-      str += "<input type='hidden' name='attachList[" + idx + "].uuid' value='" + ele.dataset.uuid + "'/>";
-      str += "<input type='hidden' name='attachList[" + idx + "].uploadPath' value='" + ele.dataset.path + "'/>";
-      str += "<input type='hidden' name='attachList[" + idx + "].fileName' value='" + ele.dataset.filename + "'/>";
-      str += "<input type='hidden' name='attachList[" + idx + "].fileType' value='" + ele.dataset.type + "'/>";
+      str +=
+        "<input type='hidden' name='attachList[" +
+        idx +
+        "].uuid' value='" +
+        ele.dataset.uuid +
+        "'/>";
+      str +=
+        "<input type='hidden' name='attachList[" +
+        idx +
+        "].uploadPath' value='" +
+        ele.dataset.path +
+        "'/>";
+      str +=
+        "<input type='hidden' name='attachList[" +
+        idx +
+        "].fileName' value='" +
+        ele.dataset.filename +
+        "'/>";
+      str +=
+        "<input type='hidden' name='attachList[" +
+        idx +
+        "].fileType' value='" +
+        ele.dataset.type +
+        "'/>";
     });
 
     //수집한 태그 폼에 추가

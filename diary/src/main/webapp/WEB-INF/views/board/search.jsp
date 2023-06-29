@@ -14,28 +14,52 @@
 			<option value="40" <c:out value="${cri.amount == 40?'selected':''}"/>>40</option>			
 		</select>
 	</div>
-	<div class="pb-2">
-		<button class="btn btn-xs btn-success" type="button" onclick="location.href='/board/register'">Register New Board</button>
-	</div>
 </div>
+<!-- 검색부분  -->
+	<div class="flex-grow-1 pb-2 justify-content-between">
+		<form action="" id="searchForm">
+			<%-- 검색 버튼 클릭 시 검색 결과는 무조건 1page 부터 봐야 하기 때문에 --%>
+			<input type="hidden" name="page" value="1" />
+			<input type="hidden" name="amount" value="${cri.amount}" />
+			<div class="form-row">
+				<div class="form-group col-3">
+					<select name="type" id="type" class="form-control">
+						<option value="" <c:out value="${cri.type == ''?'selected':''}"/>>---------</option>
+						<option value="T" <c:out value="${cri.type == 'T'?'selected':''}"/>>제목</option>
+						<option value="C" <c:out value="${cri.type == 'C'?'selected':''}"/>>내용</option>
+						<option value="W" <c:out value="${cri.type == 'W'?'selected':''}"/>>작성자</option>
+						<option value="TC" <c:out value="${cri.type == 'TC'?'selected':''}"/>>제목 or 내용</option>
+						<option value="TW" <c:out value="${cri.type == 'TW'?'selected':''}"/>>제목 or 작성자</option>
+						<option value="TCW" <c:out value="${cri.type == 'TCW'?'selected':''}"/>>제목 or 내용 or 작성자</option>
+					</select>
+				</div>
+				<div class="form-group col-5">
+					<input type="text" name="keyword" id="keyword" class="form-control" value="${cri.keyword}"/>
+				</div>
+				<div class="form-group col-3">
+					<button type="submit" class="btn btn-info">검색</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	<!-- 검색 종료 -->	
 
 <table class="table table-striped table-bordered table-hover">
 	<thead>
 		<tr>
-			<th scope="col">번호</th>
+			<th scope="col" hidden="">번호</th>
 			<th scope="col">제목</th>
 			<th scope="col">작성자</th>
 			<th scope="col">작성일</th>
-			<th scope="col">수정일</th>
 		</tr>
 	</thead>
 	<tbody>
 		<c:forEach var="dto" items="${list}">
 			<tr>
-				<th scope="row">${dto.bno}</th>
+				<th scope="row" hidden="">${dto.bno}</th>
 				<td><a href="${dto.bno}" class="move">${dto.title}</a></td>
 				<td>${dto.writer}</td>
-				<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${dto.regDate}" /></td>
+				<td>${dto.regDate}</td>
 			</tr>
 		</c:forEach>
 	</tbody>

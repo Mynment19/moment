@@ -12,7 +12,8 @@ public class Criteria {
 	private int page; //페이지번호
 	private int amount;  //한 페이지당 몇 개의 게시물을 보여줄 것인지	
 	private String type; //검색조건
-	private String keyword; //검색어	
+	private String keyword; //검색어
+	private String writer;// =userid
 	public Criteria() {
 		this(1,10);
 	}

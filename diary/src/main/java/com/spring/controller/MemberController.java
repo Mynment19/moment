@@ -12,6 +12,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import com.spring.domain.AuthDTO;
 import com.spring.domain.ChangeDTO;
+import com.spring.domain.Criteria;
 import com.spring.domain.LoginDTO;
 import com.spring.domain.MemberDTO;
 import com.spring.service.MemberService;
@@ -36,9 +37,7 @@ public class MemberController {
 	@PostMapping("/login")
 	public String loginPost(LoginDTO loginDTO,HttpSession session) {
 		log.info("로그인 요청 "+loginDTO);
-		
 		AuthDTO authDTO = service.login(loginDTO);
-		
 		if(authDTO != null) {
 			//session 로그인 정보 담기
 			session.setAttribute("authDTO", authDTO);

@@ -39,14 +39,6 @@
 	    </div>	      
 	  </div>
 	  <div class="mb-3">
-	    <label for="gender" class="form-label">성별</label>
-	    <input type="radio" name="gender" id="" value="남" class="form-check-input" required/>남
-	    <input type="radio" name="gender" id="" value="여" class="form-check-input" required/>여
-	    <div class="invalid-feedback">
-	    	성별을 선택해 주세요
-	    </div>	  
-	  </div> 
-	  <div class="mb-3">
 	    <label for="email" class="form-label">이메일</label>
 	    <input type="email" class="form-control" id="email" name="email" placeholder="이메일" required> 
 	    <div class="invalid-feedback">

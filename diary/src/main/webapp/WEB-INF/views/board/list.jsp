@@ -2,10 +2,20 @@
 <%@ include file="../include/header.jsp"%>
 <!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-	<h1 class="h3 mb-0 text-gray-800">Board List</h1>
+	<h1 class="h3 mb-0 text-gray-800">Home</h1>
 </div>
 <div class="d-flex">
-	<!-- 검색부분  -->
+	<div class="pb-2 px-2">
+		<select name="amount" id="amount" class="form-control">
+			<%-- pageDTO.cri.amount 가능 --%>
+			<option value="10" <c:out value="${cri.amount == 10?'selected':''}"/>>10</option>
+			<option value="20" <c:out value="${cri.amount == 20?'selected':''}"/>>20</option>
+			<option value="30" <c:out value="${cri.amount == 30?'selected':''}"/>>30</option>
+			<option value="40" <c:out value="${cri.amount == 40?'selected':''}"/>>40</option>			
+		</select>
+	</div>
+</div>
+<!-- 검색부분  -->
 	<div class="flex-grow-1 pb-2 justify-content-between">
 		<form action="" id="searchForm">
 			<%-- 검색 버튼 클릭 시 검색 결과는 무조건 1page 부터 봐야 하기 때문에 --%>
@@ -33,38 +43,23 @@
 		</form>
 	</div>
 	<!-- 검색 종료 -->	
-	<div class="pb-2 px-2">
-		<select name="amount" id="amount" class="form-control">
-			<%-- pageDTO.cri.amount 가능 --%>
-			<option value="10" <c:out value="${cri.amount == 10?'selected':''}"/>>10</option>
-			<option value="20" <c:out value="${cri.amount == 20?'selected':''}"/>>20</option>
-			<option value="30" <c:out value="${cri.amount == 30?'selected':''}"/>>30</option>
-			<option value="40" <c:out value="${cri.amount == 40?'selected':''}"/>>40</option>			
-		</select>
-	</div>
-	<div class="pb-2">
-		<button class="btn btn-xs btn-success" type="button" onclick="location.href='/board/register'">Register New Board</button>
-	</div>
-</div>
 
 <table class="table table-striped table-bordered table-hover">
 	<thead>
 		<tr>
-			<th scope="col">번호</th>
+			<th scope="col" hidden="">번호</th>
 			<th scope="col">제목</th>
 			<th scope="col">작성자</th>
 			<th scope="col">작성일</th>
-			<th scope="col">수정일</th>
 		</tr>
 	</thead>
 	<tbody>
 		<c:forEach var="dto" items="${list}">
 			<tr>
-				<th scope="row">${dto.bno}</th>
-				<td><a href="${dto.bno}" class="move">${dto.title}</a> <strong>[${dto.replyCnt}]</strong></td>
+				<th scope="row" hidden="">${dto.bno}</th>
+				<td><a href="${dto.bno}" class="move">${dto.title}</a></td>
 				<td>${dto.writer}</td>
 				<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${dto.regDate}" /></td>
-				<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${dto.updateDate}" /></td>
 			</tr>
 		</c:forEach>
 	</tbody>
