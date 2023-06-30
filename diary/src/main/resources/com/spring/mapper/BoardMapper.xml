@@ -8,7 +8,7 @@
 			select bno,title,writer,regdate
 			from (select /*+INDEX_DESC(diary_board pk_diary_board)*/ rownum rn, bno, title, writer,regdate
 			      from diary_board
-			      where writer = #{writer} and
+			      where
 		]]>	 
 			<include refid="criteria"></include>		     	     
 		<![CDATA[	      
@@ -18,9 +18,9 @@
 	</select>
 	
 	<!-- <select id="list" resultType="com.spring.domain.BoardDTO">
-		select *
+		select bno, title, writer, regdate
 		from diary_board
-		where writer=#{writer}
+		order by regdate desc
 	</select> -->
 	
 

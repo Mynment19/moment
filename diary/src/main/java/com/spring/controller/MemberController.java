@@ -41,6 +41,7 @@ public class MemberController {
 		if(authDTO != null) {
 			//session 로그인 정보 담기
 			session.setAttribute("authDTO", authDTO);
+			System.out.println(authDTO.getUserid());
 			//index 이동
 			return "redirect:/";			
 		}else {

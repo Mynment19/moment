@@ -9,6 +9,7 @@ import com.spring.domain.Criteria;
 public interface BoardService {
 	//전체 리스트 가져오기
 	public List<BoardDTO> getList(Criteria cri);
+
 	//글등록
 	public boolean insert(BoardDTO dto);
 	//특정 게시글 조회

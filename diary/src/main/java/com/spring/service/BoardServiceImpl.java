@@ -28,6 +28,8 @@ public class BoardServiceImpl implements BoardService {
 	public List<BoardDTO> getList(Criteria cri) {		
 		return mapper.list(cri);
 	}
+	
+	
 
 	@Transactional
 	@Override
@@ -73,6 +75,7 @@ public class BoardServiceImpl implements BoardService {
 	public List<AttachFileDTO> getAttachList(int bno) {		
 		return attachMapper.select(bno);
 	}
+
 }
 
 

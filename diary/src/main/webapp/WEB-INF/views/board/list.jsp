@@ -4,9 +4,9 @@
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
 	<h1 class="h3 mb-0 text-gray-800">Home</h1>
 </div>
-<div class="d-flex">
+<div class="d-flex" hidden="">
 	<div class="pb-2 px-2">
-		<select name="amount" id="amount" class="form-control">
+		<select name="amount" id="amount" class="form-control" hidden="">
 			<%-- pageDTO.cri.amount 가능 --%>
 			<option value="10" <c:out value="${cri.amount == 10?'selected':''}"/>>10</option>
 			<option value="20" <c:out value="${cri.amount == 20?'selected':''}"/>>20</option>
@@ -16,7 +16,7 @@
 	</div>
 </div>
 <!-- 검색부분  -->
-	<div class="flex-grow-1 pb-2 justify-content-between">
+	<div class="flex-grow-1 pb-2 justify-content-between" hidden="">
 		<form action="" id="searchForm">
 			<%-- 검색 버튼 클릭 시 검색 결과는 무조건 1page 부터 봐야 하기 때문에 --%>
 			<input type="hidden" name="page" value="1" />
@@ -54,19 +54,19 @@
 		</tr>
 	</thead>
 	<tbody>
-		<c:forEach var="dto" items="${list}">
+		<c:forEach var="dto" items="${list}">	
 			<tr>
 				<th scope="row" hidden="">${dto.bno}</th>
 				<td><a href="${dto.bno}" class="move">${dto.title}</a></td>
 				<td>${dto.writer}</td>
-				<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${dto.regDate}" /></td>
+				<td>${dto.regDate}</td>
 			</tr>
 		</c:forEach>
 	</tbody>
 </table>
 <!-- 페이지 나누기 시작 -->
 <nav aria-label="...">
-	<ul class="pagination justify-content-center">
+	<ul class="pagination justify-content-center" hidden="">
 		<c:if test="${pageDTO.prev}">
 			<li class="page-item"><a class="page-link" href="${pageDTO.startPage-1}">Previous</a></li>
 		</c:if>

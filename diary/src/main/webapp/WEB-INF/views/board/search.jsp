@@ -2,11 +2,11 @@
 <%@ include file="../include/header.jsp"%>
 <!-- Page Heading -->
 <div class="d-sm-flex align-items-center justify-content-between mb-4">
-	<h1 class="h3 mb-0 text-gray-800">Board List</h1>
+	<h1 class="h3 mb-0 text-gray-800">Home</h1>
 </div>
 <div class="d-flex">
 	<div class="pb-2 px-2">
-		<select name="amount" id="amount" class="form-control">
+		<select name="amount" id="amount" class="form-control" hidden="">
 			<%-- pageDTO.cri.amount 가능 --%>
 			<option value="10" <c:out value="${cri.amount == 10?'selected':''}"/>>10</option>
 			<option value="20" <c:out value="${cri.amount == 20?'selected':''}"/>>20</option>
@@ -54,7 +54,7 @@
 		</tr>
 	</thead>
 	<tbody>
-		<c:forEach var="dto" items="${list}">
+		<c:forEach var="dto" items="${list}">	
 			<tr>
 				<th scope="row" hidden="">${dto.bno}</th>
 				<td><a href="${dto.bno}" class="move">${dto.title}</a></td>
@@ -66,7 +66,7 @@
 </table>
 <!-- 페이지 나누기 시작 -->
 <nav aria-label="...">
-	<ul class="pagination justify-content-center">
+	<ul class="pagination justify-content-center" hidden="">
 		<c:if test="${pageDTO.prev}">
 			<li class="page-item"><a class="page-link" href="${pageDTO.startPage-1}">Previous</a></li>
 		</c:if>

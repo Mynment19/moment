@@ -45,11 +45,6 @@ public class BoardController{
 		log.info("전체 리스트 요청 ");
 		log.info("type "+ Arrays.toString(cri.getTypeArr()));
 		
-		AuthDTO authDTO = new AuthDTO();
-		cri.setWriter(authDTO.getUserid());
-		System.out.println(cri.getWriter());
-		cri.setWriter("test1");
-		
 		
 		//사용자 요청한 번호에 맞는 게시물 목록 요청
 		List<BoardDTO> list  = service.getList(cri);
@@ -121,8 +116,18 @@ public class BoardController{
 	}
 	
 	@GetMapping("/search")
-	public void getSearch() {
-		log.info("search()...");
+	public void searchGet(Model model,@ModelAttribute("cri") Criteria cri) {
+		log.info("전체 리스트 요청 ");
+		log.info("type "+ Arrays.toString(cri.getTypeArr()));
+		
+		
+		//사용자 요청한 번호에 맞는 게시물 목록 요청
+		List<BoardDTO> list  = service.getList(cri);
+		//전체 게시물 숫자
+		int total = service.getTotalCnt(cri);
+		
+		model.addAttribute("list", list);	
+		model.addAttribute("pageDTO", new PageDTO(cri, total));
 	}
 	
 	// /board/remove?bno=21
