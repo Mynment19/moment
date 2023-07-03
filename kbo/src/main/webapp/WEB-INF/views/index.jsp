@@ -17,7 +17,9 @@
 		background-color: black;
 	}
 	main{
-		padding: 10%;
+		padding-left: 10%;
+		padding-right: 10%;
+		padding-bottom:10%;
 		text-align: center;
 	}
 	.logobox{
@@ -34,8 +36,8 @@
 		text-decoration: none;
 	}
 	.box{
-		width: 10%;
-		height: 10%; 
+		width: 20%;
+		height: 20%; 
 		text-align: center;
 		margin-left: auto;
 		margin-right: auto;
@@ -50,6 +52,10 @@
 		text-decoration: none;
 		color: black;
 	}
+	img{
+		width: 200px;
+		height: 200px;
+	}
 </style>
 </head>
 <body>
@@ -61,36 +67,46 @@
 	<main>
 		<div class="teamlogolist">
 			<div class="box">
-				<a href="/kbo/doosan/info" class="teamlogo">DOOSAN</a>
+				<a href="/kbo/doosan/info" class="teamlogo">
+				<img src="https://i.namu.wiki/i/NuVR7neFequ12CKait0llyWiCG7cIJ0Nmjt1_VGzg4ZqoAduVyLpogESXePJb94T07idc3dC8_458e_dPTrQ6w.svg">DOOSAN</a>
 			</div>
 			<div class="box">
-				<a href="/kbo/hanwha/info" class="teamlogo">HANWHA</a>
+				<a href="/kbo/hanwha/info" class="teamlogo">
+				<img alt="" src="https://i.namu.wiki/i/28S4R3aOBxEWMdQB-hhvbpMnmEYQGw7wSpS8aZQ_bdwH61Y-IqX8Zkot9nBVjjty7U5spvDhD9tRC5vqOOUMEA.svg">HANWHA</a>
 			</div>
 			<div class="box">
-				<a href="/kbo/kia/info" class="teamlogo">KIA</a>
+				<a href="/kbo/kia/info" class="teamlogo">
+				<img alt="" src="https://upload.wikimedia.org/wikipedia/ko/e/e3/Kia_Tigers_emblem_%282021%29.jpg">KIA</a>
 			</div>
 			<div class="box">
-				<a href="/kbo/kiwoom/info" class="teamlogo">KIWOOM</a>
+				<a href="/kbo/kiwoom/info" class="teamlogo">
+				<img alt="" src="https://i.namu.wiki/i/i0qhQjUqhPst7K_uUfnRJSMSArHuzEvH4aYK01Si3M7YW_ow2jvRbXNzcWGMl7P6QpFZMeyl4t5ayF27mAqLMA.svg">KIWOOM</a>
 			</div>
 			<div class="box">
-				<a href="/kbo/kt/info" class="teamlogo">KT</a>
+				<a href="/kbo/kt/info" class="teamlogo">
+				<img alt="" src="https://i.namu.wiki/i/1I_O46xxWGvTC-arPbfuBwaYgmd0I9gOCfTSchy5Hf5zZ-blf38j7boUFED_abbT5R8Qsj_Ynb-b7x4zxPk4HQ.svg">KT</a>
 			</div>
 		</div> 
 		<div class="teamlogolist">
 			<div class="box">
-				<a href="/kbo/lg/info" class="teamlogo">LG</a>
+				<a href="/kbo/lg/info" class="teamlogo">
+				<img alt="" src="https://i.namu.wiki/i/BubuDg3tY_403suvO3dbCx3I15gk6f1mPVWPE-_qhQp8qV07IaE1S25nWjANcbdZ6n26lbO-oKJd4bZ8fUWFRA.svg">LG</a>
 			</div>
 			<div class="box">
-				<a href="/kbo/lotte/info" class="teamlogo">LOTTE</a>
+				<a href="/kbo/lotte/info" class="teamlogo">
+				<img alt="" src="https://blog.kakaocdn.net/dn/ANVeX/btqynaIRq53/8xc9KZyXeJqIWbLrCBGjB1/img.jpg">LOTTE</a>
 			</div>
 			<div class="box">
-				<a href="/kbo/nc/info" class="teamlogo">NC</a>
+				<a href="/kbo/nc/info" class="teamlogo">
+				<img alt="" src="https://i.namu.wiki/i/TN9uwwJvhPk8q26pyOdozaBVNM3uYALhc1BBwGcss1Qyi76fOjNiyeaUuz_4s1INrl5j6KRqDE4rW0gfYSiR6g.svg">NC</a>
 			</div>
 			<div class="box">
-				<a href="/kbo/samsung/info" class="teamlogo">SAMSUNG</a>
+				<a href="/kbo/samsung/info" class="teamlogo">
+				<img alt="" src="https://i.namu.wiki/i/2aaR7lMDzjHY9SCIJXgSgeo8L742wE8FttOK8mAqJ1iuMVWKKl3SFFKVHIvMQDgmIUfvxvVc2YDrmbwTeUSz0g.svg">SAMSUNG</a>
 			</div>
 			<div class="box">
-				<a href="/kbo/ssg/info" class="teamlogo">SSG</a>
+				<a href="/kbo/ssg/info" class="teamlogo">
+				<img alt="" src="https://i.namu.wiki/i/2HFmHNI5SdyOJzDLAVtvxW7ZKkHT-vGBXIVpwLnsumhcNhT1-aHDJ-gIdx7BqhTx2jarDlRa_AuzAkYkCKblEA.svg">SSG</a>
 			</div>
 		</div>
 		
