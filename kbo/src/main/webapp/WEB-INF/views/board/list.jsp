@@ -5,13 +5,10 @@
 	<h1 class="h3 mb-0 text-gray-800">Board List</h1>
 </div>
 <div class="d-flex">
-	<div class="pb-2 px-2">
+	<div class="pb-2 px-2" hidden="">
 		<select name="amount" id="amount" class="form-control">
 			<%-- pageDTO.cri.amount 가능 --%>
-			<option value="10" <c:out value="${cri.amount == 10?'selected':''}"/>>10</option>
-			<option value="20" <c:out value="${cri.amount == 20?'selected':''}"/>>20</option>
-			<option value="30" <c:out value="${cri.amount == 30?'selected':''}"/>>30</option>
-			<option value="40" <c:out value="${cri.amount == 40?'selected':''}"/>>40</option>			
+			<option value="10" <c:out value="${cri.amount == 10?'selected':''}"/>>10</option>			
 		</select>
 	</div>
 	<div class="pb-2">
