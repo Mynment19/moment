@@ -1,9 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="../include/header.jsp"%>
-<!-- Page Heading -->
-<div class="d-sm-flex align-items-center justify-content-between mb-4">
-	<h1 class="h3 mb-0 text-gray-800">Board List</h1>
-</div>
 <div class="d-flex">
 	<div class="pb-2 px-2" hidden="">
 		<select name="amount" id="amount" class="form-control">
