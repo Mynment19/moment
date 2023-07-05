@@ -1,5 +1,5 @@
 #Tomcat publish data
-#Wed Jul 05 15:38:52 KST 2023
+#Wed Jul 05 21:09:11 KST 2023
 org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\soldesk\\.m2\\repository\\org\\springframework\\spring-web\\5.3.28\\spring-web-5.3.28.jar=WEB-INF/lib/spring-web-5.3.28.jar
 org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\soldesk\\.m2\\repository\\org\\apache\\tomcat\\embed\\tomcat-embed-el\\9.0.76\\tomcat-embed-el-9.0.76.jar=WEB-INF/lib/tomcat-embed-el-9.0.76.jar
 org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\soldesk\\.m2\\repository\\org\\apache\\tomcat\\embed\\tomcat-embed-jasper\\9.0.76\\tomcat-embed-jasper-9.0.76.jar=WEB-INF/lib/tomcat-embed-jasper-9.0.76.jar

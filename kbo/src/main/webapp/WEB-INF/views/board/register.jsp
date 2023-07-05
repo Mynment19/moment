@@ -24,18 +24,20 @@
 		  </div>
 		  <div class="form-group">
 		    <label for="writer">Writer</label>
-		    <input type="text" class="form-control" id="writer" name="writer" required>		  	
+		    <input type="text" class="form-control" id="writer" name="writer" placeholder="writer" required>		  	
 		  	<div class="invalid-feedback">
 		  		작성자를 확인해 주세요
 		  	</div>
 		  </div>
 		  <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />	
 		  <button type="submit" class="btn btn-primary">등록</button>
-		  <button type="reset" class="btn btn-secondary">취소</button>
+		  <button type="reset" class="btn btn-secondary">초기화</button>
+		  <button type="button" class="btn"
+		  style="margin-left: 85%;" onclick="location.href='/board/list'">목록</button>
 		</form>
 	</div>
 </div>
-<div class="row mt-3">
+<!-- <div class="row mt-3">
 	<div class="col">
 		<div class="card">
 			<div class="card-header">
@@ -52,7 +54,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 <script>	
 	const path = '${pageContext.request.requestURI}';	
 	

@@ -33,7 +33,7 @@
 		</form>
 	</div>
 </div>
-<div class="row mt-3">
+<!-- <div class="row mt-3">
 	<div class="col">
 		<div class="card">
 			<div class="card-header">
@@ -47,9 +47,9 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> -->
 
-<!--  댓글 작성 폼 -->
+<%-- <!--  댓글 작성 폼 -->
 <security:authorize access="isAuthenticated()">
 	<form action="" class="mt-3" id="replyForm">
 		<div class="form-row">
@@ -118,7 +118,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> --%>
 <form action="" id="operForm">
 	<input type="hidden" name="bno" value="${dto.bno}" />
 	<input type="hidden" name="page" value="${cri.page}" />

@@ -14,7 +14,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>KBO</title>
+    <title>KBO Board</title>
 
     <!-- Custom fonts for this template-->
     <link href="/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
@@ -35,6 +35,60 @@
     
     <!--  upload css -->
     <link href="/css/upload.css" rel="stylesheet">
+    <style type="text/css">
+    	body, html{
+    		width: 100%;
+    		height: 100%;
+    		margin: 0;
+    	}
+    
+    	.registerbtn{
+    		margin-left: 85%;
+    		width: 100px;
+    	}
+    	
+    	header{
+			width: 100%;
+			height: 90px;
+			background-color: black;
+			text-align: center;
+		}
+		
+		.logo{
+		color: white;
+		font-size: 70px;
+		text-decoration: none;
+		}
+	    	
+    	main{
+    		padding-top:5%;
+    		padding-left: 200px;
+    		padding-right: 200px;
+    		
+    	}
+    	
+    	.moveread{
+    		color: black;
+    		text-decoration: none;
+    		
+    	}
+    	
+    	.regdate{
+    		width: 10%;
+    	}
+    	
+    	.searchpo{
+    		display: flex;
+    		justify-content: center;
+    	}
+    	
+
+    	
+    	.pagenum{
+    		margin-left: 50%;
+    	}
+    </style>
+    
 </head>
 
 <body id="page-top">
@@ -49,12 +103,13 @@
             <div id="content">
 
 
-                <div class="container-fluid">
+               
                 
                 <!-- Page Heading -->
-<div class="d-sm-flex align-items-center justify-content-between mb-4">
-	<a href="/"><h1 class="h3 mb-0 text-gray-800">Home</h1></a>
-</div>
+				<header>
+					<a href="/" class="logo" style="text-decoration: none; color: white;">KBO</a>
+				</header>
+				<main>
                 
                 
                 

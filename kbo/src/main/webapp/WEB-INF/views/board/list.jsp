@@ -7,33 +7,37 @@
 			<option value="10" <c:out value="${cri.amount == 10?'selected':''}"/>>10</option>			
 		</select>
 	</div>
-	<div class="pb-2">
-		<button class="btn btn-xs btn-success" type="button" onclick="location.href='/board/register'">Register New Board</button>
-	</div>
 </div>
 
-<table class="table table-striped table-bordered table-hover">
+<!-- table table-striped table-bordered table-hover -->
+<table class="table table-bordered table-hover">
 	<thead>
 		<tr>
-			<th scope="col">번호</th>
+			<th scope="col" class="regdate">번호</th>
 			<th scope="col">제목</th>
-			<th scope="col">작성자</th>
-			<th scope="col">작성일</th>
+			<th scope="col" class="regdate">작성자</th>
+			<th scope="col" class="regdate">작성일</th>
 		</tr>
 	</thead>
 	<tbody>
 		<c:forEach var="dto" items="${list}">
 			<tr>
 				<th scope="row">${dto.bno}</th>
-				<td><a href="${dto.bno}" class="move">${dto.title}</a></td>
+				<td><a href="${dto.bno}" class="move moveread">${dto.title}</a></td>
 				<td>${dto.writer}</td>
-				<td><fmt:formatDate pattern="yyyy-MM-dd HH:mm" value="${dto.regDate}" /></td>
+				<td><fmt:formatDate pattern="yyyy-MM-dd" value="${dto.regDate}" /></td>
 			</tr>
 		</c:forEach>
 	</tbody>
 </table>
+
+	<div class="pb-2 registerbtn">
+		<button class="btn btn-xs registerbtn" type="button" onclick="location.href='/board/register'">글쓰기</button>
+	</div>
+
+
 <!-- 검색부분  -->
-	<div class="flex-grow-1 pb-2 justify-content-between">
+	<div class="searchpo">
 		<form action="" id="searchForm">
 			<%-- 검색 버튼 클릭 시 검색 결과는 무조건 1page 부터 봐야 하기 때문에 --%>
 			<input type="hidden" name="page" value="1" />
@@ -54,7 +58,7 @@
 					<input type="text" name="keyword" id="keyword" class="form-control" value="${cri.keyword}"/>
 				</div>
 				<div class="form-group col-3">
-					<button type="submit" class="btn btn-info">검색</button>
+					<button type="submit" class="btn">검색</button>
 				</div>
 			</div>
 		</form>
@@ -62,7 +66,7 @@
 	<!-- 검색 종료 -->	
 <!-- 페이지 나누기 시작 -->
 <nav aria-label="...">
-	<ul class="pagination justify-content-center">
+	<ul class="pagination pagenum">
 		<c:if test="${pageDTO.prev}">
 			<li class="page-item"><a class="page-link" href="${pageDTO.startPage-1}">Previous</a></li>
 		</c:if>
