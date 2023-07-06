@@ -1,10 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="../../include/doosanheader.jsp"%>
-			<h1>DOOSAN</h1>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/n9MpLiGFBuI" 
+			<div class = "block">
+			<iframe width="100%" height="600" src="https://www.youtube.com/embed/n9MpLiGFBuI" 
 			title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
 			allowfullscreen></iframe>
-			<h3>[Time Line]</h3>
+			</div>
+			<h3 style="font-size: 30px;">[Time Line]</h3>
 			<ul>
 				<li>0:00:00 Final Countdown</li>
 				<li>0:01:12 경기병서곡</li>

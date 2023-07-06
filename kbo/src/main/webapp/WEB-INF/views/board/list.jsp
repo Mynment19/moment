@@ -9,7 +9,6 @@
 	</div>
 </div>
 
-<!-- table table-striped table-bordered table-hover -->
 <table class="table table-bordered table-hover">
 	<thead>
 		<tr>
@@ -47,14 +46,10 @@
 					<select name="type" id="type" class="form-control">
 						<option value="" <c:out value="${cri.type == ''?'selected':''}"/>>---------</option>
 						<option value="T" <c:out value="${cri.type == 'T'?'selected':''}"/>>제목</option>
-						<option value="C" <c:out value="${cri.type == 'C'?'selected':''}"/>>내용</option>
 						<option value="W" <c:out value="${cri.type == 'W'?'selected':''}"/>>작성자</option>
-						<option value="TC" <c:out value="${cri.type == 'TC'?'selected':''}"/>>제목 or 내용</option>
-						<option value="TW" <c:out value="${cri.type == 'TW'?'selected':''}"/>>제목 or 작성자</option>
-						<option value="TCW" <c:out value="${cri.type == 'TCW'?'selected':''}"/>>제목 or 내용 or 작성자</option>
 					</select>
 				</div>
-				<div class="form-group col-5">
+				<div class="form-group col-5 searchbar">
 					<input type="text" name="keyword" id="keyword" class="form-control" value="${cri.keyword}"/>
 				</div>
 				<div class="form-group col-3">
@@ -64,7 +59,9 @@
 		</form>
 	</div>
 	<!-- 검색 종료 -->	
-<!-- 페이지 나누기 시작 -->
+	
+	
+<!-- 페이지 나누기  -->
 <nav aria-label="...">
 	<ul class="pagination pagenum">
 		<c:if test="${pageDTO.prev}">
@@ -72,7 +69,6 @@
 		</c:if>
 
 		<c:forEach begin="${pageDTO.startPage}" end="${pageDTO.endPage}" var="idx">
-			<!-- <li class="page-item active"></li> -->
 			<li class="page-item ${pageDTO.cri.page==idx?'active':'' }"><a class="page-link" href="${idx}">${idx}</a></li>
 
 		</c:forEach>
@@ -83,7 +79,8 @@
 	</ul>
 </nav>
 <!-- 페이지 나누기 종료  -->
-<!-- Modal -->
+
+
 <div class="modal" tabindex="-1" id="registerModal">
 	<div class="modal-dialog">
 		<div class="modal-content">
@@ -102,7 +99,8 @@
 		</div>
 	</div>
 </div>
-<!-- 페이지 나누기 링크 처리를 위한 폼 -->
+
+
 <form action="/board/list" id="operForm">
 	<%-- pageDTO.cri.page 가능  --%>	
 	<input type="hidden" name="page" value="${cri.page}" />

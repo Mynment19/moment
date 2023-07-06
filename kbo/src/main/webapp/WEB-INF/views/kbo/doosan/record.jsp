@@ -2,12 +2,13 @@
 <%@ include file="../../include/doosanheader.jsp"%>
 			<div class="block">
 				<h1>성적</h1>
-				<table>
+				<table class="recordtable">
 					<thead>
 						<tr>
 							<th>년도</th>
 							<th>정규시즌</th>
 							<th>최종순위</th>
+							<th>비고</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -15,96 +16,247 @@
 							<td>1982</td>					
 							<td>2위</td>					
 							<td>1위</td>					
+							<td>V1</td>					
 						</tr>
 						<tr>
 							<td>1983</td>					
 							<td>5위</td>					
-							<td>5위</td>					
+							<td>5위</td>
+							<td></td>					
 						</tr>
 						<tr>
 							<td>1984</td>					
 							<td>2위</td>					
-							<td>3위</td>					
+							<td>3위</td>		
+							<td></td>			
 						</tr>
 						<tr>
 							<td>1985</td>					
 							<td>5위</td>					
-							<td>4위</td>					
+							<td>4위</td>		
+							<td></td>			
 						</tr>
 						<tr>
 							<td>1986</td>					
 							<td>1위</td>					
-							<td>3위</td>					
+							<td>3위</td>		
+							<td></td>			
 						</tr>
 						<tr>
 							<td>1987</td>					
 							<td>4위</td>					
-							<td>4위</td>					
+							<td>4위</td>
+							<td></td>					
 						</tr>
 						<tr>
 							<td>1988</td>					
 							<td>5위</td>					
-							<td>5위</td>					
+							<td>5위</td>
+							<td></td>					
 						</tr>
 						<tr>
 							<td>1989</td>					
 							<td>5위</td>					
-							<td>5위</td>					
+							<td>5위</td>
+							<td></td>					
 						</tr>
 						<tr>
 							<td>1990</td>					
 							<td>7위</td>					
-							<td>7위</td>					
+							<td>7위</td>	
+							<td></td>				
 						</tr>
 						<tr>
 							<td>1991</td>					
 							<td>8위</td>					
-							<td>8위</td>					
+							<td>8위</td>
+							<td></td>					
 						</tr>
 						<tr>
 							<td>1992</td>					
 							<td>5위</td>					
-							<td>5위</td>					
+							<td>5위</td>	
+							<td></td>				
 						</tr>
 						<tr>
 							<td>1993</td>					
 							<td>3위</td>					
-							<td>3위</td>					
+							<td>3위</td>		
+							<td></td>			
 						</tr>
 						<tr>
 							<td>1994</td>					
 							<td>7위</td>					
-							<td>7위</td>					
+							<td>7위</td>	
+							<td></td>				
 						</tr>
 						<tr>
 							<td>1995</td>					
 							<td>1위</td>					
-							<td>1위</td>					
+							<td>1위</td>		
+							<td>V2</td>			
 						</tr>
 						<tr>
 							<td>1996</td>					
 							<td>8위</td>					
-							<td>8위</td>					
+							<td>8위</td>		
+							<td></td>		
 						</tr>
 						<tr>
 							<td>1997</td>					
 							<td>5위</td>					
-							<td>5위</td>					
+							<td>5위</td>		
+							<td></td>			
 						</tr>
 						<tr>
 							<td>1998</td>					
 							<td>4위</td>					
-							<td>4위</td>					
+							<td>4위</td>		
+							<td></td>			
 						</tr>
 						<tr>
 							<td>1999</td>					
 							<td>드림 1위</td>					
-							<td>3위</td>					
+							<td>3위</td>		
+							<td></td>			
 						</tr>
 						<tr>
 							<td>2000</td>					
 							<td>드림 2위</td>					
+							<td>2위</td>		
+							<td></td>			
+						</tr>
+						<tr>
+							<td>2001</td>					
+							<td>3위</td>					
+							<td>1위</td>		
+							<td>V3</td>			
+						</tr>
+						<tr>
+							<td>2002</td>					
+							<td>5위</td>					
+							<td>5위</td>		
+							<td></td>			
+						</tr>
+						<tr>
+							<td>2003</td>					
+							<td>7위</td>					
+							<td>7위</td>		
+							<td></td>			
+						</tr>
+						<tr>
+							<td>2004</td>					
+							<td>3위</td>					
+							<td>3위</td>		
+							<td></td>			
+						</tr>
+						<tr>
+							<td>2005</td>					
 							<td>2위</td>					
+							<td>2위</td>					
+							<td></td>
+						</tr>
+						<tr>
+							<td>2006</td>					
+							<td>5위</td>					
+							<td>5위</td>
+							<td></td>					
+						</tr>
+						<tr>
+							<td>2007</td>					
+							<td>2위</td>					
+							<td>2위</td>		
+							<td></td>			
+						</tr>
+						<tr>
+							<td>2008</td>					
+							<td>2위</td>					
+							<td>2위</td>	
+							<td></td>				
+						</tr>
+						<tr>
+							<td>2009</td>					
+							<td>3위</td>					
+							<td>3위</td>	
+							<td></td>				
+						</tr>
+						<tr>
+							<td>2010</td>					
+							<td>3위</td>					
+							<td>3위</td>	
+							<td></td>				
+						</tr>
+						<tr>
+							<td>2011</td>					
+							<td>5위</td>					
+							<td>5위</td>		
+							<td></td>			
+						</tr>
+						<tr>
+							<td>2012</td>					
+							<td>3위</td>					
+							<td>3위</td>	
+							<td></td>				
+						</tr>
+						<tr>
+							<td>2013</td>					
+							<td>4위</td>					
+							<td>2위</td>	
+							<td></td>				
+						</tr>
+						<tr>
+							<td>2014</td>					
+							<td>6위</td>					
+							<td>6위</td>	
+							<td></td>				
+						</tr>
+						<tr>
+							<td>2015</td>					
+							<td>3위</td>					
+							<td>1위</td>			
+							<td>V4</td>		
+						</tr>
+						<tr>
+							<td>2016</td>					
+							<td>1위</td>					
+							<td>1위</td>		
+							<td>V5</td>			
+						</tr>
+						<tr>
+							<td>2017</td>					
+							<td>2위</td>					
+							<td>2위</td>	
+							<td></td>				
+						</tr>
+						<tr>
+							<td>2018</td>					
+							<td>1위</td>					
+							<td>2위</td>		
+							<td></td>			
+						</tr>
+						<tr>
+							<td>2019</td>					
+							<td>1위</td>					
+							<td>1위</td>	
+							<td>V6</td>				
+						</tr>
+						<tr>
+							<td>2020</td>					
+							<td>3위</td>					
+							<td>2위</td>		
+							<td></td>			
+						</tr>
+						<tr>
+							<td>2021</td>					
+							<td>4위</td>					
+							<td>2위</td>		
+							<td></td>			
+						</tr>
+						<tr>
+							<td>2022</td>					
+							<td>9위</td>					
+							<td>9위</td>		
+							<td></td>			
 						</tr>
 					</tbody>
 				</table>

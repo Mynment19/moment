@@ -1,36 +1,51 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="../../include/doosanheader.jsp"%>
 			<div class="block">
-				<img src="https://i.namu.wiki/i/NuVR7neFequ12CKait0llyWiCG7cIJ0Nmjt1_VGzg4ZqoAduVyLpogESXePJb94T07idc3dC8_458e_dPTrQ6w.svg">
+				<img src="https://i.namu.wiki/i/nJGPUhjMWTerZzFqnKJGGPB1L590iFeIqBlMBhy3W86ucthf6dlcr0aHv-AB8tQWrZhA6Ci5voLTmejEiY67akL30CudXHVlgChT9GtFtHvBZZO8y16LHgrSOLBuYkiqK1wa_O5dFUj5cjIC-A-CQQ.svg" style="width: 50%;">
 				<h1>DOOSAN BEARS</h1>
 			</div>
 			
 			<div class="block">
 				<h1>연고지</h1>
-				<div id="map" style="width:40%;height:350px;"></div>
+				<h2>서울 특별시</h2>
+				<div id="map" style="width:100%;height:500px;"></div>
 			</div>
 			
 			<div class="block">
 			<h1>구장</h1>
-				<img alt="stadium" class="stadium" src="https://newsimg-hams.hankookilbo.com/2022/04/03/18e69204-a210-490e-8b8e-508ab18fec5a.jpg">
-				<span>서울 잠실 야구장</span>
+				<h2>서울 잠실 야구장</h2>
+				<img alt="stadium" class="stadium" src="https://stadium.seoul.go.kr/files/2016/11/facility_jamsil_baseball.jpg">
+				<img alt="stadium" class="stadium" src="https://pds.joongang.co.kr/news/component/htmlphoto_mmdata/202111/02/e97c81f1-a269-45fa-9fca-c7130cedc015.jpg">
 			</div>
 			
 			<div class="block">
 				<h1>유니폼</h1>
-				<img alt="home" class="uniform" src="https://i.namu.wiki/i/2wYLpiL9PPOiG6M-IZ0YkhDxIUQHzRBZO2If-g7MlpsQ82jDSLg9vv8-689AdBHyQRitj-wXb7nYN5zlCEKolG38i2VWKAoPvIffclEcM-75H5hsa2R-QVBv-woG3G_ffduuzKULZ2vEEQXNoPwPxA.webp">HOME
-				<img alt="away" class="uniform" src="https://i.namu.wiki/i/p_g0wnF5m3CxBpcba8VfxXmq4xQOL5pXoNUwDyKK2FFUdMi0-E-ttbWgrYuX8jI90H0IZLwyaNFI-lMS8QakPTJ14msJS7PSMW_eqels1jbAPcV7doMhlANy1XfaBIVtNt6MyonqI8vhiWE_v09oSw.webp">AWAY
+				<div class="uniformbox">
+					<div class="uniform">
+						<img alt="home" src="https://www.doosanbearswefan.shop/shop/data/goods/1679643379666l0.jpg" style="width: 100%;">
+						<p>HOME</p>
+					</div>
+					<div class="uniform">
+						<img alt="away" src="https://www.doosanbearswefan.shop/shop/data/goods/1679644421472l0.jpg" style="width: 100%;">
+						<p>AWAY</p>
+					</div>
+				</div>
 			</div>
+			
+			
 		</div>
 	</main>
 	
 	
+	
 	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e0c995ee371614542f5a5fadc82de7a7&libraries=services"></script>
 	<script>
+	
+	
 	var mapContainer = document.getElementById('map'),
 	    mapOption = {
 	        center: new kakao.maps.LatLng(33.450701, 126.570667), // 중심좌표
-	        level: 12 // 지도 확대 레벨
+	        level: 10 // 지도 확대 레벨
 	    };  
 	
 	// 지도 생성

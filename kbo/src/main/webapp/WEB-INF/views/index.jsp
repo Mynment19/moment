@@ -18,13 +18,12 @@
 		background-color: black;
 	}
 	main{
-		padding-left: 10%;
-		padding-right: 10%;
 		padding-bottom:10%;
 		padding-top:5%;
 		text-align: center;
 	}
-	a{
+	a{	
+		color:black;
 		text-decoration: none;
 	}
 	.logobox{
@@ -49,6 +48,9 @@
 		margin: 1px;
 		transition:1s;
 		filter: brightness(0.6);
+		margin-left: auto;
+		margin-right: auto;
+		
 	}
 	
 	.box:hover{
@@ -88,10 +90,9 @@
 	}
 	
 	.teamlogolist{
-		margin-left: 0;
-		margin-right: 0;
 		border:0;
 		display: flex;
+		justify-content: center;
 	}
 	
 	.teamlogo{
@@ -116,7 +117,7 @@
 		width: 300px;
 		height: 100px;
 		background-color: white;
-		border-radius: 20px;
+		border-radius: 5px;
 	}
 	.boardimg{
 		width: 70px;
@@ -127,6 +128,9 @@
 		color: black;
 		text-decoration: none;
 	}
+	
+	
+	
 </style>
 </head>
 <body>
@@ -210,6 +214,7 @@
 			<a href="/board/list" class="boardlink">
 			<img alt="" src="https://cdn-icons-png.flaticon.com/512/2262/2262154.png" class="boardimg">게시판</a>
 		</div> 
+		
 	 </main>
 </body>
 </html>

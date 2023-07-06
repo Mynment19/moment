@@ -1,104 +1,62 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="../../include/kiaheader.jsp"%>
-
-			<h1>DOOSAN</h1>
-			<iframe width="560" height="315" src="https://www.youtube.com/embed/n9MpLiGFBuI" 
-			title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-			allowfullscreen></iframe>
-			<h3>[Time Line]</h3>
-			<ul>
-				<li>0:00:00 Final Countdown</li>
-				<li>0:01:12 경기병서곡</li>
-				<li>0:01:34 라인업</li>
-				<li>0:03:29 31 정수빈 (Boys Like Girls - The Great Escape)</li>
-				<li>0:04:33 14 박계범 (드렁큰타이거 - Monster)</li>
-				<li>0:05:55 53 양석환 (블락비 - JACKPOT)</li>
-				<li>0:06:57 32 김재환 (Zion I & The Grouch - Drop It On The 1)</li>
-				<li>0:07:51 25 양의지 (박재범 - 좋아)</li>
-				<li>0:08:49 13 허경민 (체리필터 - 달빛소년)</li>
-				<li>0:10:00 11 호세 로하스 (Lil Wayne - Right Above It [feat. Drake])</li>
-				<li>0:11:09 51 조수행 (Hardwell - Follow Me [feat. Jason Derulo])</li>
-				<li>0:12:15 7 이유찬 (Simple Plan - Take My Hand)</li>
-				<li>0:13:22 39 김인태 (케이윌 - 말해! 뭐해?)</li>
-				<li>0:14:40 23 강승호 (Fall Out Boys - The Phoenix)</li>
-				<li>0:15:46 37 김대한 (VINAI - The Wave [feat. Harrison])</li>
-				<li>0:17:03 22 장승현 (Alan Walker - The Drum)</li>
-				<li>0:18:00 3 안재석 (DJ Snake & Lil Jon - Turn Down for What)</li>
-				<li>0:19:17 18 김민혁 (MC몽 - 천하무적)</li>
-				<li>0:20:12 49 강진성 (OneRepublic - I Ain't Worried)</li>
-				<li>0:21:13 5 신성현 (안녕바다 - 별빛이 내린다)</li>
-				<li>0:22:28 52 김재호 (Linkoln Brewster - Joy to the World)</li>
-				<li>0:23:29 57 양찬열 (Linkin Park - Faint)</li>
-				<li>0:24:00 8 송승환 (트랜스픽션 - Get Show)</li>
-				<li>0:24:28 20 안승한 (Lorenzo Ballerini DJ - Tribute [DJ Fernando Lopez Sun Miz])</li>
-				<li>0:24:58 35 전민재 (R3hab & Headhunterz - Won't Stop Rocking)</li>
-				<li>0:25:32 26 박유연 (JOSE AM - Diablo)</li>
-				<li>0:26:10 44 홍성호 (Led Zeppelin - Immigrant Song)</li>
-				<li>0:27:02 92 김태근 (Turbotronic - Supersonic)</li>
-				<li>0:27:36 16 서예일 (동방신기 - 주문)</li>
-				<li>0:28:07 투수교체송</li>
-				<li>0:28:43 43 라울 알칸타라 (Rochy RD - Ay Si Ñiño)</li>
-				<li>0:30:01 47 곽빈 (EXO - 으르렁)</li>
-				<li>0:31:35 33 딜런 파일 (P. Diddy - Shake Ya Tailfeather [feat. Nelly & Murphy Lee])</li>
-				<li>0:33:22 61 최원준 (Sevenn - Loco Papi)</li>
-				<li>0:35:28 41 김동주 (Unofficialboyy - mmm [feat. oceanfromtheblue])</li>
-				<li>0:37:38 64 최승용 (ASH ISLAND - Beautiful [feat. Skinny Brown])</li>
-				<li>0:39:16 45 이형범 (Fall Out Boys - Centuries)</li>
-				<li>0:40:57 55 이승진 (Village People - YMCA)</li>
-				<li>0:42:47 63 고봉재 (에픽하이 - Breakdown)</li>
-				<li>0:44:29 66 박신지 (코요태 - 우리의 꿈)</li>
-				<li>0:46:45 60 박정수 (John Cena - The Time is Now)</li>
-				<li>0:48:17 2 김지용 (G-Dragon - Heartbreaker)</li>
-				<li>0:49:39 62 김유성 (Jayde Wolf - Let's Go)</li>
-				<li>0:50:57 28 장원준 (Alter Bridge - Metalingus)</li>
-				<li>0:52:26 27 김강률 (DJ Snake - Taki Taki [ft. Selena Gomez, Ozuna, Cardi B])</li>
-				<li>0:54:19 42 최지강 (AJR - Burn the House Down)</li>
-				<li>0:55:35 46 김명신 (Stellar - Ashes)</li>
-				<li>0:57:43 1 박치국 (신해철 - 그대에게)</li>
-				<li>1:00:00 29 이병헌 (전영호 - Butter-Fly)</li>
-				<li>1:01:58 65 정철원 (젝스키스 - 사나이 가는 길)</li>
-				<li>1:03:38 17 홍건희 (Diplo & French Montana & Lil Pump - Welcome to the Party)</li>
-				<li>1:05:35 끈기와 감동의 두산</li>
-				<li>1:05:50 승리의 두산</li>
-				<li>1:07:22 야야야 두산</li>
-				<li>1:08:40 해야해야</li>
-				<li>1:10:25 서울 두산 승리하리라</li>
-				<li>1:12:00 두산의 승리를 위하여</li>
-				<li>1:13:34 Hurricane</li>
-				<li>1:15:05 WE WANNA DOOSAN</li>
-				<li>1:16:44 브라보 마이 라이프 (야구장 버전)</li>
-				<li>1:18:54 Rock to the DOOSAN</li>
-				<li>1:20:57 우리의 베어스</li>
-				<li>1:21:30 가자! 두산베어스</li>
-				<li>1:23:00 다함께 허슬두</li>
-				<li>1:24:29 라랄라 베어스</li>
-				<li>1:25:00 날아올라</li>
-				<li>1:28:33 미라클두산</li>
-				<li>1:30:52 승리의 송가</li>
-				<li>1:32:15 우리 두산 멋진 두산</li>
-				<li>1:34:14 허슬두</li>
-				<li>1:35:44 해냈다 두산</li>
-				<li>1:37:18 챔피언 두산</li>
-				<li>1:38:44 최강두산 승리하리라</li>
-				<li>1:40:20 긍정리듬</li>
-				<li>1:40:39 아웃송1</li>
-				<li>1:41:02 아웃송2 (WE WANNA DOOSAN)</li>
-				<li>1:41:21 뱃노래</li>
-				<li>1:41:51 오 최강두산</li>
-				<li>1:42:30 아주 나이스</li>
-				<li>1:42:47 반했어</li>
-				<li>1:43:13 삼진송1</li>
-				<li>1:43:33 삼진송2</li>
-				<li>1:44:01 도루성송</li>
-				<li>1:44:21 안타송1 (안타 안타 안타날려라)</li>
-				<li>1:44:50 안타송2</li>
-				<li>1:45:08 안타송3</li>
-				<li>1:45:34 안타송4 (순정)</li>
-				<li>1:46:09 홈런송 (리턴즈)</li>
-				<li>1:46:41 풀카운트송</li>
-				<li>1:47:06 볼넷송</li>
-				<li>1:47:23 왼손 머리위로 오른손 머리위로</li>
-				<li>1:47:56 Final Countdown 원정</li>
+			<div class = "block">
+			<iframe width="100%" height="600" src="https://www.youtube.com/embed/IeePzm62e-c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			</div>
+			<h3 style="font-size: 30px;">[Time Line]</h3>
+			<ul><p>[선수응원]</p>
+				<li>00:00 01_박찬호</li>
+				<li>00:29 03_김선빈</li>
+				<li>01:26 05_김도영</li>
+				<li>01:57 08_류지혁</li>
+				<li>02:38 78_신범수</li>
+				<li>03:31 16_최원준</li>
+				<li>03:58 22_주효상</li>
+				<li>04:48 25_이우성</li>
+				<li>05:48 26_한승택</li>
+				<li>06:47 30_소크라테스</li>
+				<li>07:20 33_변우혁</li>
+				<li>08:10 34_최형우</li>
+				<li>09:07 47_나성범</li>
+				<li>09:38 52_황대인</li>
+				<li>10:20 57_고종욱 </li>
+				<li>10:49 66_이창진</li>
+				
+				<p>[잔응원]</p>
+				<li>11:30 잔응원_우리 모두 외쳐보자</li>
+				<li>11:59 잔응원_빠바밤바빰</li>
+				<li>12:47 잔응원_박수응원(어이)</li>
+				<li>13:29 잔응원_기아없이는 못살아</li>
+				<li>14:01 잔응원_시원하게 안타</li>
+				<li>14:41 잔응원_미치도록 사랑해요</li>
+				<li>15:11 잔응원_버터플라이</li>
+				<li>15:40 잔응원_안타 홈런 날려버려라</li>
+				<li>16:14 잔응원_오른쪽 왼쪽 날려버려</li>
+				<li>16:38 잔응원_살리고 달리고</li>
+				<li>17:03 잔응원_볼넷응원</li>
+				<li>17:18 잔응원_풀카운트</li>
+				<li>17:39 잔응원_최강기아를 위해</li>
+				<li>18:05 잔응원_영원히 사랑한다</li>
+				<li>18:31 잔응원_ I SAY WOO</li>
+				
+				<p>[팀응원]</p>
+				<li>19:16 팀응원_라인업송</li>
+				<li>20:57 팀응원_영원하리라KIA타이거즈</li>
+				<li>22:23 팀응원_사랑한다KIA</li>
+				<li>23:50 팀응원_기아를 응원하라</li>
+				<li>25:09 팀응원_우리는 하나</li>
+				<li>26:23 팀응원_최강KIA타이거즈</li>
+				<li>27:57 팀응원_외쳐라 최강기아</li>
+				
+				<p>[추억의 응원가]</p>
+				<li>29:47 추억의 응원가_김주찬</li>
+				<li>30:43 추억의 응원가_이범호</li>
+				<li>31:31 추억의 응원가_김민식</li>
+				<li>32:06 추억의 응원가_프레스턴 터커</li>
+				<li>32:37 추억의 응원가_안치홍</li>
+				<li>33:37 추억의 응원가_나지완</li>
+				<li>34:05 추억의 응원가_박동원</li>
+				<li>34:40 추억의 응원가_류승현</li>
 			</ul>
 		</div>
 	</main>

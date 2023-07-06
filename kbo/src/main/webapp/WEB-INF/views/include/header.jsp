@@ -49,7 +49,7 @@
     	
     	header{
 			width: 100%;
-			height: 90px;
+			height: 100px;
 			background-color: black;
 			text-align: center;
 		}
@@ -58,6 +58,7 @@
 		color: white;
 		font-size: 70px;
 		text-decoration: none;
+		font-family: fantasy;
 		}
 	    	
     	main{
@@ -80,6 +81,10 @@
     	.searchpo{
     		display: flex;
     		justify-content: center;
+    	}
+    	
+    	.searchbar{
+    		width: 800px;
     	}
     	
 
@@ -107,7 +112,10 @@
                 
                 <!-- Page Heading -->
 				<header>
-					<a href="/" class="logo" style="text-decoration: none; color: white;">KBO</a>
+					<a href="/" class="logo">
+					<img src="https://play-lh.googleusercontent.com/FlqomJ2Z3Fd9YQAFFyx6zNY0Dmyynzd8D4rQLMKsx1NwpEM-DmT25z-ZngqTNouSdVs" style="width: 60px; border-radius: 50px;">
+					KBO
+					</a>
 				</header>
 				<main>
                 

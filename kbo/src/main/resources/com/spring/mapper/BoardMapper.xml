@@ -11,8 +11,8 @@
 	<select id="list" resultType="com.spring.domain.BoardDTO">
 		<![CDATA[
 			select bno,title,writer,regdate,updatedate,replycnt
-			from (select /*+INDEX_DESC(spring_board pk_spring_board)*/ rownum rn, bno, title, writer,regdate,updatedate,replycnt
-			      from spring_board
+			from (select /*+INDEX_DESC(kbo_board pk_kbo_board)*/ rownum rn, bno, title, writer,regdate,updatedate,replycnt
+			      from kbo_board
 			      where 
 		]]>	 
 			<include refid="criteria"></include>		     
@@ -25,7 +25,7 @@
 	
 	<!-- 전체 게시물 개수 : totalCnt -->
 	<select id="totalCnt" resultType="java.lang.Integer">
-		select count(*) from spring_board
+		select count(*) from kbo_board
 		where
 			<include refid="criteria"></include>
 		bno > 0		
@@ -33,7 +33,7 @@
 	
 	<!-- 댓글 수 추가  -->
 	<update id="updateReplyCnt">
-		update spring_board set replycnt = replycnt + #{amount}
+		update kbo_board set replycnt = replycnt + #{amount}
 		where bno=#{bno}
 	</update>
 	
@@ -83,17 +83,20 @@
 	<insert id="insert">
 		<!-- 주로 pk 값을 미리 SQL 을 통해서 처리해 두고 특정한 이름으로 결과를 보관 -->
 		<selectKey keyProperty="bno" order="BEFORE" resultType="int">
-			select seq_board.nextval from dual
+			select seq_kboboard.nextval from dual
 		</selectKey>	
 	
-		insert into spring_board(bno,title,content,writer) 
+		insert into kbo_board(bno,title,content,writer) 
 		values(#{bno},#{title},#{content},#{writer})
 	</insert>
 
 	<!-- 특정 번호 조회  -->
 	<select id="get" resultType="com.spring.domain.BoardDTO">
-		select bno,title,writer,content from spring_board where bno=#{bno}
+		select bno,title,writer,content from kbo_board where bno=#{bno}
 	</select>
+	
+	
+	
 	
 	<!-- 특정 번호 조회 + 파일 정보 
 	     property : dto 변수명과 일치
@@ -123,13 +126,13 @@
 	
 	<!-- 글 수정 : bno 일치 시 (title, content, updatedate) -->
 	<update id="update">
-		update spring_board set title=#{title}, content=#{content}, updatedate=sysdate
+		update kbo_board set title=#{title}, content=#{content}, updatedate=sysdate
 		where bno=#{bno}
 	</update>
 	
 	<!-- 글 삭제 -->
 	<delete id="delete">
-		delete from spring_board where bno=#{bno}
+		delete from kbo_board where bno=#{bno}
 	</delete>
 </mapper>
 

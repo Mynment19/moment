@@ -1,74 +1,10 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ include file="../../include/kiaheader.jsp"%>
-			<h1>DOOSAN</h1>
-			<h1>투수</h1>
-			<table>
-				<thead>
-					<tr>
-						<th>등번호</th>
-						<th>선수명</th>
-						<th>포지션</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>1</td>					
-						<td>박치국</td>					
-						<td>중간계투</td>					
-					</tr>
-				</tbody>
-			</table>
-			<h1>내야수</h1>
-			<table>
-				<thead>
-					<tr>
-						<th>등번호</th>
-						<th>선수명</th>
-						<th>포지션</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>13</td>					
-						<td>허경민</td>					
-						<td>3루수</td>					
-					</tr>
-				</tbody>
-			</table>
-			<h1>외야수</h1>
-			<table>
-				<thead>
-					<tr>
-						<th>등번호</th>
-						<th>선수명</th>
-						<th>포지션</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>11</td>					
-						<td>로하스</td>					
-						<td>우익수</td>					
-					</tr>
-				</tbody>
-			</table>
-			<h1>포수</h1>
-			<table>
-				<thead>
-					<tr>
-						<th>등번호</th>
-						<th>선수명</th>
-						<th>포지션</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>25</td>					
-						<td>양의지</td>					
-						<td>포수</td>					
-					</tr>
-				</tbody>
-			</table>
+			<div class="block">
+				<a href="https://tigers.co.kr/players/coaching-staff">
+				<img alt="" src="https://mblogthumb-phinf.pstatic.net/MjAyMzAyMDJfMTEw/MDAxNjc1MzI4NzM5OTY2.GlrI8_naTPRX6KjkvsuNOumGq7soXQgM3o_z8CO9pEYg.9i_28Cn6uJowA_NNjLVSwf-16Jqu-oGGlRGw3Mv2VJ8g.JPEG.kjae1214/Screenshot%EF%BC%BF20230201%EF%BC%BF152403%EF%BC%BFInstagram.jpg?type=w800">
+				</a>
+			</div>
 		</div>
 	</main>
 </body>
