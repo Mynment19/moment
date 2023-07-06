@@ -22,7 +22,7 @@
 			<input type="hidden" name="bno" value="${dto.bno}" />
 			<input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
 						
-			<button type="submit" class="btn btn-info">수정</button>
+			<button type="submit" class="btn btn-info">완료</button>
 			<button type="button" class="btn btn-danger">삭제</button>			
 				
 			

@@ -1,5 +1,4 @@
 INDEX VERSION 1.4+C:\source\moment\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-796481373.index
 3901356317.index
 1859862059.index
 3316259654.index
