@@ -170,7 +170,7 @@
 			</a>
 			<a href="/kbo/kt/info">
 				<div class="box ktbk">
-				<img src="https://i.namu.wiki/i/8ceKsP5g7d8xxxoFCV5XIL0n5IHbtZ9qpQpzm1cJ2uXeeaL9LeiE1iU1xdQJpvJhJ6yJlFMtfZhBF4I6JZH8yw.svg" class="emblem">
+				<img src="https://i.namu.wiki/i/45ic69UJuOckbLlX3s9dxgBzYEM9VF7yx-TMb0QdCucsj1WIJobtZ0MWabQ6SouGbTc8cuQvg8lFh00LcYSO5A.svg" class="emblem">
 				<p class="teamlogo">KT</p>
 				</div>
 			</a>
